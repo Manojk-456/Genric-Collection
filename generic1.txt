@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+
+namespace List1
+{
+    
+    class student
+    {
+        public static void ShowDatail<T>(T [] data)
+        {
+            foreach(T x in data)
+            {
+                Console.WriteLine(x);
+            }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] data = new int[2];
+            data[0]=45;
+            data[1]=78;
+    
+            string[] data1 = new string[2];
+            data1[0] = "manoj kumar";
+            data1[1]= "chetu india";
+
+            student.ShowDatail(data);
+            student.ShowDatail(data1);
+       
+           
+        }
+    }
+}

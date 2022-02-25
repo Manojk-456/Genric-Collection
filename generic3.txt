@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+
+namespace List1
+{
+    
+    class check
+    { 
+        public static bool data<T>(T a,T b)
+        {
+            bool x = a.Equals(b);
+            return x;
+        }
+    }
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+
+            Console.WriteLine(check.data(12, 45));
+
+            Console.WriteLine(check.data(12, 12.000));
+
+            Console.WriteLine(check.data("hp","hp"));
+
+            Console.WriteLine(check.data("Hp", "hp"));
+
+
+        }
+    }
+}

@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+
+namespace List1
+{
+    
+    class student<T>
+    {
+        T name;
+        T address;
+
+        public student(T n,T a)
+        {
+            name=n;
+            address=a;
+            Console.WriteLine("Student name {0} and address {1}", name, address);
+        }
+    }
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+
+           student<string> obj = new student<string>("chetu","noida");
+            student<int> obj1 = new student<int>(45, 79);
+
+       
+           
+        }
+    }
+}

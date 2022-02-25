@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+
+namespace List1
+{
+    
+     
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+
+            List<int> data = new List<int>();
+            data.Add(456);
+            data.Add(12);
+            data.Add(45);
+            data.Add(89);
+            Console.WriteLine("inserted data :");
+            foreach(int x in data)
+            {
+                Console.WriteLine(x);
+            }
+            data.Remove(12);
+            Console.WriteLine("Remove 12 value :");
+            foreach(int x in data)
+            {
+                Console.WriteLine(x);
+            }
+            data.RemoveAt(0);
+            Console.WriteLine("Remove index acording 1 index");
+            foreach (int x in data)
+            {
+                Console.WriteLine(x);
+            }
+           
+
+
+
+        }
+    }
+}
