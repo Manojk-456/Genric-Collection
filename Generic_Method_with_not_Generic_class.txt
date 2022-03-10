@@ -1,0 +1,14 @@
+class generic
+{
+    public void print<T>(T data)
+    {
+        Console.WriteLine(data);
+    }
+    public static void Main(string [] args)
+    {
+        generic obj = new generic();
+        obj.print<int>(12);
+        obj.print<string>("manoj kumar");
+        obj.print<float>(12.45f);
+    }
+}
